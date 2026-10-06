@@ -61,5 +61,41 @@ export const Spacing = {
   six: 64,
 } as const;
 
+/**
+ * Paleta do Serenamente: verde "refúgio", fundos suaves e cartões brancos.
+ * As telas iniciais usam esta paleta diretamente (design light-first).
+ */
+export const Brand = {
+  screen: '#F3F7F3',
+  card: '#FFFFFF',
+  border: '#E2EAE3',
+  borderStrong: '#CFDCD2',
+  primary: '#1E6B41',
+  primaryStrong: '#14512F',
+  primarySoft: '#E6F4EB',
+  primaryMint: '#F1F8F3',
+  text: '#14231B',
+  textMuted: '#5D6E64',
+  textFaint: '#93A199',
+  onPrimary: '#FFFFFF',
+  star: '#EBA13A',
+  danger: '#E5484D',
+  dangerSoft: '#FDECEC',
+  night: '#0D1A13',
+  nightSurface: '#16241C',
+  nightBorder: '#273E31',
+  nightText: '#E7F1EA',
+  nightMuted: '#9BB1A4',
+  track: '#DFE9E1',
+} as const;
+
+export const Radius = {
+  sm: 10,
+  md: 14,
+  lg: 18,
+  xl: 24,
+  pill: 999,
+} as const;
+
 export const BottomTabInset = Platform.select({ ios: 50, android: 80 }) ?? 0;
 export const MaxContentWidth = 800;
